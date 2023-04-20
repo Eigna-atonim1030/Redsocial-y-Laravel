@@ -82,3 +82,15 @@ INSERT INTO comentario_publicacion(id_comentario_publicacion,id_publicacion) VAL
 (3,3,3),
 (2,2,2),
 (1,1,1);
+
+UPDATE usuario SET email = 'cafa@gmail.com' WHERE id_usuario = 1;
+UPDATE usuario SET email = 'cro345@gmail.com' WHERE id_usuario = 2;
+UPDATE usuario SET email = 'duki013@gmail.com' WHERE id_usuario = 3;
+UPDATE usuario SET email = 'fjfo145@gmail.com' WHERE id_usuario = 4;
+UPDATE usuario SET email = 'cooi453@gmail.com' WHERE id_usuario = 5;
+
+DELETE FROM publicacion WHERE id_publicacion = 1;
+DELETE FROM publicacion WHERE id_publicacion = 2;
+DELETE FROM publicacion WHERE id_publicacion = 3;
+DELETE FROM publicacion WHERE id_publicacion = 4;
+DELETE FROM publicacion WHERE id_publicacion = 5;
