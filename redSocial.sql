@@ -46,3 +46,39 @@ CREATE TABLE comentario_publicacion(
     FOREIGN KEY (id_publicacion) REFERENCES publicacion (id_publicacion) ON DELETE CASCADE,
       FOREIGN KEY (id_comentario) REFERENCES comentario (id_comentario) ON DELETE CASCADE
 );
+
+INSERT INTO usuario (nombre, biografia, genero,  email) VALUES
+(1,'Mino',"21","mino@gmail.com","Femenino","cuantasestrellas"."hay en"),
+(2,'Kalil',"12","ksz@gmail.com","Masculino","cielocuantas"."habran en"),
+(3,'Krigtian',"33","kritian@gmail.com","Masculino","elfondodel"."mar"),
+(4,'Boli',"24","boli@gmail.com","Masculino","aquesedebe"."el azul del cielo");
+(5,'Kevin',"13","kevin@gmail.com","Masculino","yporque"."tambien");
+
+INSERT INTO amigo(id_amigo,nombre,descripcion,genero,email) VALUES
+(1,'Felipe',"es azul","Masculino","teby@gmail.com"),
+(2,'Esteban',"el","Masculino","teby@gmail.com"),
+(3,'Kaleft',"mar","Masculino","teby@gmail.com"),
+(4,'Diego',"hay tantas preguntas","Masculino","teby@gmail.com"),
+(5,'Emanuel',"tantos mundos","Masculino","teby@gmail.com");
+
+
+INSERT INTO comentario(id_comentario, descripcion, fecha, id_usuario)VALUES
+(1,"por explorar", "01/10/2001",2),
+(2,"que quisiera ser", "02/02/2022",3),
+(3,"un superbuzo", "03/03/2023",4),
+(4,"para conocer los", "04/04/2004",5),
+(5,"caballitos del mar", "05/05/2005",6);
+
+INSERT INTO publicacion(id_publicacion,fecha, url_imagen)VALUES
+(1,"05/11/2005","yquisiera/ser/un","gran/piloto", "111", 1),
+(2,"04/12/2024","atodas/lasnubes/poder","saludar/pero", "222", 2),
+(3,"03/13/2023","lo/quemas/quisiera","hacer/es", "333", 3),
+(4,"02/14/2022","poner/la/imaginacion","a/volar", "444", 4),
+(5,"02/14/2021","y/ser/por","siempre/doki", "555", 5);
+
+INSERT INTO comentario_publicacion(id_comentario_publicacion,id_publicacion) VALUES
+(5,5,5),
+(4,4,4),
+(3,3,3),
+(2,2,2),
+(1,1,1);
