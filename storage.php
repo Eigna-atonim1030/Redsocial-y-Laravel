@@ -1,19 +1,24 @@
-<?php
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| API Routes
+| CARPETA STORAGE:CONTIENE SUBCARPETAS APP,FRAMEWORK,LOGS
 |--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
+|App contiene otra carpeta public(Dentro de ella esta un .gitignore) y un .gitignore
+| 
+|framework contiene 4 carpetas cache,sessions,testing y views 
+| cache
+|     data: contiene otro .gitignore
+|     .gitignore
+| 
+| sessions
+|     .gitignore
+| 
+| testing
+|     .gitignore
+| 
+| views
+|     .gitignore
+| 
+| .gitignore
+| 
 */
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
